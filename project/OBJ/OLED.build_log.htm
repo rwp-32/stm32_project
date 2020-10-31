@@ -1,0 +1,162 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: blu Administrator, blu, LIC=UJWP0-BEP9F-ARTXW-Q0KQZ-YNS08-RLAFC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\project\project\USER\OLED.uvprojx
+Project File Date:  10/28/2020
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LCD_DISPLAY\lcd_play.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\MY_USART\usart2.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(65): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 8 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling lcd.c...
+..\HARDWARE\LCD\lcd.c(349): warning:  #177-D: variable "di" was declared but never referenced
+        int di;
+..\HARDWARE\LCD\lcd.c(485): warning:  #177-D: variable "enshow" was declared but never referenced
+        u8 enshow=0;
+..\HARDWARE\LCD\lcd.c: 2 warnings, 0 errors
+compiling myiic.c...
+..\HARDWARE\IIC\myiic.c(209): warning:  #223-D: function "memset" declared implicitly
+                memset(humiture,0,sizeof(humiture));
+..\HARDWARE\IIC\myiic.c(213): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                sprintf(humiture_buff1,"%6.2f*C   %6.2f%%",Temperature,Humidity);       
+..\HARDWARE\IIC\myiic.c: 2 warnings, 0 errors
+compiling lcd_play.c...
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LCD_DISPLAY\lcd_play.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\MY_USART\usart2.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LCD_DISPLAY\lcd_play.c(43): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\LCD_DISPLAY\lcd_play.c: 8 warnings, 0 errors
+compiling usart2.c...
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LCD_DISPLAY\lcd_play.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\MY_USART\usart2.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\MY_USART\usart2.c(21): warning:  #188-D: enumerated type mixed with another type
+                RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_AFIO, ENABLE);       //使能USART1，GPIOA时钟以及复用功能时钟
+..\HARDWARE\MY_USART\usart2.c(22): warning:  #188-D: enumerated type mixed with another type
+                RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2|RCC_APB2Periph_AFIO, ENABLE);      //使能USART1，GPIOA时钟以及复用功能时钟
+..\HARDWARE\MY_USART\usart2.c(39): warning:  #188-D: enumerated type mixed with another type
+                NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;                 //IRQ通道使能
+..\HARDWARE\MY_USART\usart2.c(52): warning:  #188-D: enumerated type mixed with another type
+      USART_ITConfig(USART2, USART_IT_RXNE, ENABLE);//开启中断
+..\HARDWARE\MY_USART\usart2.c(53): warning:  #188-D: enumerated type mixed with another type
+      USART_Cmd(USART2, ENABLE);                    //使能串口 
+..\HARDWARE\MY_USART\usart2.c: 12 warnings, 0 errors
+compiling mcu_api.c...
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\mcu_api.c(469): warning:  #177-D: variable "i" was declared but never referenced
+    int i=0;
+..\HARDWARE\mcu_sdk\mcu_api.c: 4 warnings, 0 errors
+compiling protocol.c...
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LCD_DISPLAY\lcd_play.h(14): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\MY_USART\usart2.h(16): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\INCLUDE\include.h(26): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\protocol.c: 7 warnings, 0 errors
+compiling system.c...
+..\HARDWARE\mcu_sdk\system.h(142): warning:  #1-D: last line of file ends without a newline
+    
+..\HARDWARE\mcu_sdk\mcu_api.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\bluetooth.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\mcu_sdk\system.c(257): warning:  #223-D: function "printf" declared implicitly
+                printf(" xin tiao bao huida \n");
+..\HARDWARE\mcu_sdk\system.c: 4 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_hd.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+linking...
+Program Size: Code=18398 RO-data=5238 RW-data=2348 ZI-data=1980  
+FromELF: creating hex file...
+"..\OBJ\OLED.axf" - 0 Error(s), 47 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\project\project\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
