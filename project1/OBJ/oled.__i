@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\OLED
+-I C:\Users\Administrator\Desktop\≤‚ ‘\USER\RTE
+-I C:\MDK5.14\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-I C:\MDK5.14\ARM\CMSIS\Include
+-D__UVISION_VERSION="514" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\oled.o --omf_browse ..\obj\oled.crf --depend ..\obj\oled.d "..\HARDWARE\OLED\oled.c"
